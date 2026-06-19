@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <h1>Task Manager</h1>
+
+    <button id="themeBtn">Toggle Theme</button>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter Task">
+
+        <select id="category">
+            <option value="Study">Study</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h3>Tasks</h3>
+
+    <div id="taskContainer"></div>
+
+    <hr>
+
+    <h2>Browser Rendering Pipeline</h2>
+
+    <div class="pipeline">
+        <div>HTML</div>
+        ↓
+        <div>Parsing</div>
+        ↓
+        <div>Tokenization</div>
+        ↓
+        <div>DOM Tree</div>
+
+        <br><br>
+
+        <div>CSS</div>
+        ↓
+        <div>CSSOM Tree</div>
+
+        <br><br>
+
+        <div>DOM Tree + CSSOM Tree</div>
+        ↓
+        <div>Render Tree</div>
+    </div>
+
+    <hr>
+
+    <h2>Event Propagation Demo</h2>
+
+    <div id="grandparent">
+        Grandparent
+        <div id="parent">
+            Parent
+            <button id="child">Child Button</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
